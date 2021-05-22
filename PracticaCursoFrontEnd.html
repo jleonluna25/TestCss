@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #ab88ff;
+        }
+        .header {
+            background-color: #ab88ff;
+            box-sizing: border-box;
+            height: 90px;
+            padding-top: 8px;
+            padding-left: 8px;
+            /*width: 100%;*/
+        }
+        .header__img {
+            width: 250px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .header__menu {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            margin-right: 30px;
+        }
+        .header__menu ul {
+            /*display: none;*/
+            list-style: none;
+            margin: 0 0 0 -12px;
+            padding: 0;
+            position: absolute;
+            text-align: left;
+            width: 100px;
+        }
+        .header__menu--profile {
+            margin-right: 8px;
+            width: 40px;
+            text-align: center;
+        }
+        
+    </style>
+    <title>:: Practica 1 - Header ::</title>
+</head>
+<body>
+    <!-- Begin : Header con Logo -->
+    <header class="header">
+        <img class="header__img" src="assets\img\logo-platzi.png" alt="Platzi-Video-Logo">
+        <!-- Begin : Menu -->
+        <div class="header__menu">
+            <!-- Begin : profile -->
+            <div class="header__menu--profile">
+                <img src="assets\img\user-icon.png" alt="profile">
+                <p>Perfil</p>
+            </div>
+            <!-- End  : profile -->
+            <!-- Begin : Lista de opciones -->
+            <ul>
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar Sesión</a></li>
+            </ul>
+            <!-- End  : Lista de opciones -->
+        </div>
+        <!-- End  : Menu -->
+    </header>
+    <!-- End   : Header con Logo -->
+</body>
+</html>
